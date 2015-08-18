@@ -16,7 +16,7 @@ Route::get('/', 'WelcomeController@index');
 Route::get('home', 'HomeController@index');
 
 Route::get('restaurant', 'RestaurantController@index');
-
+Route::resource('user', 'UserController');
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',

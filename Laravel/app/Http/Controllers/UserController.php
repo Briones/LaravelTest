@@ -2,10 +2,10 @@
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-
+use App\Http\Requests\UserForm;
 use Illuminate\Http\Request;
 
-class RestaurantController extends Controller {
+class UserController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
@@ -14,8 +14,7 @@ class RestaurantController extends Controller {
 	 */
 	public function index()
 	{
-
-		return view("user");
+		//
 	}
 
 	/**
@@ -25,7 +24,7 @@ class RestaurantController extends Controller {
 	 */
 	public function create()
 	{
-		//
+		return view("user");
 	}
 
 	/**
@@ -33,7 +32,7 @@ class RestaurantController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(UserForm $userForm)
 	{
 		//
 	}
