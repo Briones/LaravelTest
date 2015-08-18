@@ -33,5 +33,9 @@ return [
 		'model'  => 'App\User',
 		'secret' => '',
 	],
-
+	'facebook' => [
+		'client_id'     => '895998057159461',
+		'client_secret' => '3076e19c1a54f61393ac73aaec3da2b1',
+		'redirect'      => 'http://laravel.dev/login/callback/facebook',
+	],
 ];

@@ -3,6 +3,8 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+    color: #5bc0de;
+    background-color: #286090;
 }
 body {
   margin: 0;
