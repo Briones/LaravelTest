@@ -19,6 +19,7 @@ class CreateUsersTable extends Migration {
 			$table->string('paternal_name',100);
 			$table->string('maternal_name',100);
 			$table->enum('gender', ['male', 'female']);
+			$table->enum('type', ['owner', 'user']);
 			$table->string('email')->unique();
 			$table->string('password', 60);
 			$table->string('avatar');

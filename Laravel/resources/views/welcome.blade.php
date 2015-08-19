@@ -49,7 +49,7 @@
 				<div class="content">Pon tu fonda al alcance de todos!</div>
 				</br>
 				</br>
-					<a href="{{ url('/auth/register') }}" class="btn btn-success">{{ trans('user.Register Here') }}</a>
+					<a href="{{ url('/user/create') }}" class="btn btn-success">{{ trans('user.Register Here') }}</a>
 
 
 

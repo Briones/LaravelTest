@@ -4,7 +4,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\UserForm;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Hash;
 class UserController extends Controller {
 
 	/**
@@ -34,7 +34,17 @@ class UserController extends Controller {
 	 */
 	public function store(UserForm $userForm)
 	{
-		//
+		$user = new \App\User;
+
+		$user->name = \Request::input('name');
+
+		$user->paternal_name = \Request::input('paternal_name');
+		$user->maternal_name = \Request::input('paternal_name');
+		$user->email = \Request::input('email');
+		$user->password = \Hash::make(\Request::input('password'));
+		$user->save();
+
+		return redirect('user/create')->with('message', 'Usuario registrado con éxito.');
 	}
 
 	/**
